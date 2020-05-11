@@ -17,7 +17,7 @@ import { getConnection, SelectQueryBuilder } from 'typeorm';
 import { EntityManager } from 'typeorm/entity-manager/EntityManager';
 
 @Resolver(() => Author)
-class AuthorResolver {
+export class AuthorResolver {
   constructor(private readonly repoService: RepoService) {}
 
   private async _getAuthorById(

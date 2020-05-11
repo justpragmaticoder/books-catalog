@@ -9,8 +9,7 @@ import Author from './author.entity';
 import { Field, ID, ObjectType } from 'type-graphql';
 
 @ObjectType()
-// @Entity({name: 'books', orderBy: { id: 'ASC'}})
-@Entity({ name: 'books' })
+@Entity({name: 'books', orderBy: { id: 'ASC'}})
 @Unique(['title'])
 export default class Book {
   constructor(title: string) {

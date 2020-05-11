@@ -11,7 +11,6 @@ import Book from './book.entity';
 
 @ObjectType()
 @Entity({ name: 'authors', orderBy: { id: 'ASC' } })
-@Entity({ name: 'authors' })
 @Unique(['firstName', 'lastName'])
 export default class Author {
   @Field(() => ID)

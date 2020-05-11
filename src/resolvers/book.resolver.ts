@@ -17,7 +17,7 @@ import { IGraphQLContext } from '../types/graphql.types';
 import { EntityManager } from 'typeorm/entity-manager/EntityManager';
 
 @Resolver(() => Book)
-class BookResolver {
+export class BookResolver {
   constructor(private readonly repoService: RepoService) {}
 
   @Query(() => Book, { nullable: true })
